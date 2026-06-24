@@ -25,14 +25,4 @@ SessionLocal = sessionmaker(bind=engine)
 
 
 def get_session():
-    """
-    Returns a new SQLAlchemy session for querying the database.
-    Caller is responsible for closing it when done.
-
-    Returns:
-        Session: A new SQLAlchemy session instance.
-
-    TODO:
-        - Return SessionLocal()
-    """
-    pass  # Remove this line when you implement the function
+    return SessionLocal()
